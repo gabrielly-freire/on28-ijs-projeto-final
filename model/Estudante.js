@@ -37,14 +37,6 @@ class Estudante extends Usuario {
         }
     }
 
-    visualizarAgendamentos() {
-        if (this.agendamentos.length > 0) {
-            return this.agendamentos;
-        } else {
-            throw ('Não há agendamentos para o estudante.');
-        }
-    }
-
 }
 
 module.exports = { Estudante }

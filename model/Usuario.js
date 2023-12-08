@@ -7,7 +7,11 @@ class Usuario {
     }
 
     visualizarAgendamentos() {
-        return this.agendamentos;
+        if (this.agendamentos.length > 0) {
+            return this.agendamentos;
+        } else {
+            throw ('Não há agendamentos para o estudante.');
+        }    
     }
 }
 
